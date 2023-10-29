@@ -9,7 +9,7 @@ import Filter from 'bad-words';
 
 const badWords = new Filter();
 
-const SERVER_PORT = 8080;
+const SERVER_PORT = process.env.PORT || 3000;
 
 const server = createServer(app);
 const wss = new WebSocketServer({ server });
