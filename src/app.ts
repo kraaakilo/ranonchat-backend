@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { WebSocketServer } from 'ws';
+import { WebSocketServer} from 'ws';
 import { createServer } from 'http';
 import app from "express";
 import { MessageType, UserConnection } from './types';
