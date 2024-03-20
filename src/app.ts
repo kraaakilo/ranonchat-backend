@@ -47,7 +47,7 @@ wss.on('connection', function connection(ws) {
       }
     }
     catch (e: unknown) {
-      console.error(e);
+      console.log("Error parsing message.", (e.toString().substring(0, 100) + "..."));
     }
   });
 
